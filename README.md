@@ -15,3 +15,6 @@ rm -rf node_modules
 
 //Run Yarn
 yarn
+
+//Google Fonts Montserrat
+Paste in index.html and app.css as font-family
