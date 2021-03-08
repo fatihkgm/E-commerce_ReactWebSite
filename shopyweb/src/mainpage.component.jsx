@@ -1,8 +1,9 @@
 import React from "react";
+import "./mainpage_style.scss";
 
 const MainPage = () => (
   <div className="homepage">
-    <h1>Welcome to my Homepage</h1>
+    <h1>Welcome to KGM Shopping</h1>
     <div className="directory-menu">
       <div className="menu-item">
         <div className="content">
