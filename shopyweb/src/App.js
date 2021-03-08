@@ -1,8 +1,15 @@
 import React from "react";
 import "./App.css";
+import MainPage from "./mainpage.component";
 
-function App() {
-  return <div>Hello World</div>;
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <MainPage />
+      </div>
+    );
+  }
 }
 
 export default App;
