@@ -18,3 +18,12 @@ yarn
 
 //Google Fonts Montserrat
 Paste in index.html and app.css as font-family
+
+
+//For updating project 
+git clone http
+cd to folder
+ls
+rm -rf yarn.lock
+npm update -D
+
