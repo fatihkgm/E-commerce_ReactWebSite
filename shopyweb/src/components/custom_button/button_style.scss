@@ -5,14 +5,22 @@
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 20px;
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: ''Montserrat', sans-serif';
   font-weight: bolder;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  background: #6fb2e5;
+   box-shadow: 0 1px 5px #010e18, inset 0 10px 20px #d0f3f7;
+   -o-box-shadow: 0 1px 5px #10171b, inset 0 10px 20px #ddf6f8;
+   -webkit-box-shadow: 0 1px 5px #0b1a25, inset 0 10px 20px #d7ecee;
+   -moz-box-shadow: 0 1px 5px #051520, inset 0 10px 20px #d9ecee;
+   color: white;
+   text-shadow: 0 1px 1px black;
 
   &:hover {
     background-color: white;
@@ -20,3 +28,5 @@
     border: 1px solid black;
   }
 }
+
+
