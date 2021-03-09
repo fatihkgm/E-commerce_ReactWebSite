@@ -1,12 +1,14 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import "./App.css";
-import MainPage from "./pages/homepage/mainpage.component";
-import ShopyPage from "./pages/shopy/shopy.component.jsx";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import './App.css';
+import MainPage from './pages/homepage/mainpage.component';
+import ShopyPage from './pages/shopy/shopy.component.jsx';
+import Header from './components/header/header';
 
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/shopy" component={ShopyPage} />
