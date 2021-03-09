@@ -19,11 +19,15 @@ yarn
 //Google Fonts Montserrat
 Paste in index.html and app.css as font-family
 
-
-//For updating project 
+//For updating project
 git clone http
 cd to folder
 ls
 rm -rf yarn.lock
 npm update -D
 
+//React router installation
+yarn add react-router-dom
+
+- If any issue occurs
+  #add package-json > resolutions and add babel test
