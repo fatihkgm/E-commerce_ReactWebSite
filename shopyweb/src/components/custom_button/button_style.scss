@@ -14,7 +14,7 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  background: #e6eded;
+  background: #aed6f7;
   box-shadow: 0 1px 5px #5a8eb6, inset 0 10px 20px #0778fa;
   -o-box-shadow: 0 1px 5px #5a8eb6, inset 0 10px 20px #0778fa;
   -webkit-box-shadow: 0 1px 5px #5a8eb6, inset 0 10px 20px #0778fa;
@@ -28,15 +28,15 @@
   }
 
   &.google_sign {
-    background-color: #e6eded;
-    color: black;
+    background-color: #dbb3ce;
+    color: rgb(250, 244, 244);
     box-shadow: 0 1px 5px #613352, inset 0 10px 20px #b65a97;
     -o-box-shadow: 0 1px 5px #b65a97, inset 0 10px 20px #b65a97;
     -webkit-box-shadow: 0 1px 5px #b65a97, inset 0 10px 20px #b65a97;
     -moz-box-shadow: 0 1px 5px #b65a97, inset 0 10px 20px #b65a97;
 
     &:hover {
-      background: #272ae6;
+      background: #ebebf0;
       box-shadow: 0 1px 5px #319df0, inset 0 10px 20px #0778fa;
       -o-box-shadow: 0 1px 5px #319df0, inset 0 10px 20px #0778fa;
       -webkit-box-shadow: 0 1px 5px #319df0, inset 0 10px 20px #0778fa;
