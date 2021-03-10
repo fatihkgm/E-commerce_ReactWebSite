@@ -31,3 +31,8 @@ yarn add react-router-dom
 
 - If any issue occurs
   #add package-json > resolutions and add babel test
+
+
+//firebase
+yarn add firebase
+
