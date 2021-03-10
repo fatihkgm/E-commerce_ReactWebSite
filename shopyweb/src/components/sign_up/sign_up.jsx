@@ -1,10 +1,7 @@
 import React from 'react';
-
 import FormInput from '../form_input/form_input';
-import CustomButton from '../cusom_button/button';
-
+import CustomButton from '../custom_button/button';
 import { auth, createUserProfile } from '../../firebase/firebase';
-
 import './sign_up.scss';
 
 class SignUp extends React.Component {
@@ -36,7 +33,7 @@ class SignUp extends React.Component {
       );
 
       await createUserProfile(user, { displayName });
-
+     // clear the form
       this.setState({
         displayName: '',
         email: '',
