@@ -61,7 +61,7 @@ class SignIn extends React.Component {
               onClick={signInWithGoogle}
               isGoogleSignIn
             >
-              USE GMAIL
+              USE <i class="fab fa-google"></i>MAIL
             </CustomButton>
           </div>
         </form>
