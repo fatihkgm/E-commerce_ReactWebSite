@@ -11,6 +11,7 @@
   text-transform: uppercase;
   font-family: '' Montserrat ', sans-serif';
   font-weight: bolder;
+  text-align: center;
   border: none;
   cursor: pointer;
   background: #aed6f7;
@@ -41,6 +42,17 @@
       -webkit-box-shadow: 0 1px 5px #319df0, inset 0 10px 20px #0778fa;
       -moz-box-shadow: 0 1px 5px #319df0, inset 0 10px 20px #0778fa;
       color: rgb(10, 10, 10);
+    }
+  }
+  &.inverted {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border: none;
     }
   }
 }
