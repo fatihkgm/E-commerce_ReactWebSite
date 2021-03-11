@@ -36,3 +36,6 @@ yarn add react-router-dom
 //firebase
 yarn add firebase
 
+//Redux Installation
+yarn add redux redux-logger react-redux
+//add import { Provider } from 'react-redux'; for redux

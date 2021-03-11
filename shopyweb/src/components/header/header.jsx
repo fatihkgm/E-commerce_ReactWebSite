@@ -25,7 +25,7 @@ const Header = ({ currentUser }) => (
       {currentUser ? (
         <div className="option" onClick={() => auth.signOut()}>
           <i class="far fa-sign-out-alt"></i>
-          SIGN OUT
+          SIGNOUT
         </div>
       ) : (
         <Link className="option" to="/register">
