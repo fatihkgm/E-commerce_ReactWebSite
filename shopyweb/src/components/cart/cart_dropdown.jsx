@@ -9,14 +9,14 @@ import { toggleCartHidden } from '../../redux/cart/cart.actions.js';
 import './cart_dropdown.scss';
 
 const CartDrop = ({ cartItems, history, dispatch }) => (
-  <div className='cart-dropdown'>
-    <div className='cart-items'>
+  <div className="cart-dropdown">
+    <div className="cart-items">
       {cartItems.length ? (
-        cartItems.map(cartItem => (
+        cartItems.map((cartItem) => (
           <CartItem key={cartItem.id} item={cartItem} />
         ))
       ) : (
-        <span className='empty-message'>Your cart is empty</span>
+        <span className="empty-message">Your cart is empty</span>
       )}
     </div>
     <CustomButton
@@ -25,13 +25,13 @@ const CartDrop = ({ cartItems, history, dispatch }) => (
         dispatch(toggleCartHidden());
       }}
     >
-      GO TO CHECKOUT
+      CheckOut
     </CustomButton>
   </div>
 );
 
 const mapStateToProps = createStructuredSelector({
-  cartItems: selectCartItems
+  cartItems: selectCartItems,
 });
 
 export default withRouter(connect(mapStateToProps)(CartDrop));
