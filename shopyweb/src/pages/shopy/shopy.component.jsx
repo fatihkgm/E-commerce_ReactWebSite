@@ -1,23 +1,20 @@
 import React from 'react';
-import SHOP_DATA from './shopydata.js';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
 import CollectionView from '../../components/collectionView/collection_view';
+import { selectCollections } from '../../redux/shopy/shopy_selector';
 
-class ShopyPage extends React.Component {
-  constructor(props) {
-    super(props);
+const ShopyPage = ({ collections }) => (
+  <div className="shop_page">
+    {collections.map(({ id, ...otherCollectionProps }) => (
+      <CollectionView key={id} {...otherCollectionProps} />
+    ))}
+  </div>
+);
 
-    this.state = { collections: SHOP_DATA };
-  }
-  render() {
-    const { collections } = this.state;
-    return (
-      <div className="shop_page">
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <CollectionView key={id} {...otherCollectionProps} />
-        ))}
-      </div>
-    );
-  }
-}
+const mapStateToProps = createStructuredSelector({
+  collections : selectCollections
+})
 
-export default ShopyPage;
+export default connect (mapStateToProps) (ShopyPage);
