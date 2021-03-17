@@ -47,3 +47,5 @@ yarn add reselect
 //persist library for storage item frontend (local session stroage easily)
 yarn add redux-persist
 
+stripe
+yarn add react-stripe-checkout
