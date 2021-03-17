@@ -14,7 +14,8 @@ const Directory = ({ sections }) => (
   </div>
 );
 
-const mapStateToPops = createStructuredSelector({
-  sections: selectDirectorySections,
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections
 });
-export default connect(mapStateToPops)(Directory);
+
+export default connect(mapStateToProps)(Directory);

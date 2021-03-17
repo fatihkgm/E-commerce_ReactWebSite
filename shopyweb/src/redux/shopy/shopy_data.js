@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  watches: {
     id: 1,
     title: 'Watches',
     routeName: 'watches',
@@ -60,7 +60,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  sneakers: {
     id: 2,
     title: 'Sneakers',
     routeName: 'sneakers',
@@ -115,7 +115,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  sunglasses: {
     id: 3,
     title: 'Sunglasses',
     routeName: 'sunglasses',
@@ -152,7 +152,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  womens: {
     id: 4,
     title: 'Womens',
     routeName: 'womens',
@@ -184,24 +184,24 @@ const SHOP_DATA = [
       {
         id: 27,
         name: 'Women Fashion5',
-        imageUrl: '/images/womens/women5.jpg',
+        imageUrl: '/images/womens/women5.png',
         price: 45,
       },
       {
         id: 28,
         name: 'Women Fashion6',
-        imageUrl: '/images/womens/women6.jpg',
+        imageUrl: '/images/womens/women6.png',
         price: 135,
       },
       {
         id: 29,
         name: 'Women Fashion7',
-        imageUrl: '/images/womens/women7.jpg',
+        imageUrl: '/images/womens/women7.png',
         price: 20,
       },
     ],
   },
-  {
+  mens: {
     id: 5,
     title: 'Mens',
     routeName: 'mens',
@@ -244,7 +244,6 @@ const SHOP_DATA = [
       },
     ],
   },
-  
-];
+};
 
 export default SHOP_DATA;

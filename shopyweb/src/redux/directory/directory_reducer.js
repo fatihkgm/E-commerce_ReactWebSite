@@ -1,38 +1,36 @@
-import { Switch } from 'react-router';
-
 const INITIAL_STATE = {
   sections: [
     {
       title: 'watches',
       imageUrl: 'https://i.ibb.co/VYzVT1F/watch.jpg',
       id: 1,
-      linkUrl: 'watches',
+      linkUrl: 'shopy/watches',
     },
     {
-      title: 'glasses',
+      title: 'sunglasses',
       imageUrl: 'https://i.ibb.co/hDFp4kw/glasses.jpg',
-      id: 2,
-      linkUrl: '',
+      id: 3,
+      linkUrl: 'shopy/sunglasses',
     },
     {
       title: 'sneakers',
       imageUrl: 'https://i.ibb.co/sHPG98B/senakers.jpg',
-      id: 3,
-      linkUrl: '',
+      id: 2,
+      linkUrl: 'shopy/sneakers',
     },
     {
       title: 'womens',
       imageUrl: 'https://i.ibb.co/Wph8Ww1/women.jpg',
       size: 'large',
       id: 4,
-      linkUrl: '',
+      linkUrl: 'shopy/womens',
     },
     {
       title: 'mens',
       imageUrl: 'https://i.ibb.co/1RkF6XQ/myimg.jpg',
       size: 'large',
       id: 5,
-      linkUrl: '',
+      linkUrl: 'shopy/mens',
     },
   ],
 };
