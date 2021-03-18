@@ -1,14 +1,15 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'watches',
+      title: ' watches',
       imageUrl: 'https://i.ibb.co/VYzVT1F/watch.jpg',
       id: 1,
       linkUrl: 'shopy/watches',
     },
     {
       title: 'sunglasses',
-      imageUrl: 'https://i.ibb.co/hDFp4kw/glasses.jpg',
+      imageUrl:
+        'https://i.ibb.co/TP035xG/Screen-Shot-2021-03-17-at-9-54-47-PM.png',
       id: 3,
       linkUrl: 'shopy/sunglasses',
     },
@@ -19,14 +20,22 @@ const INITIAL_STATE = {
       linkUrl: 'shopy/sneakers',
     },
     {
-      title: 'womens',
+      title: 'women dress',
       imageUrl: 'https://i.ibb.co/Wph8Ww1/women.jpg',
       size: 'large',
       id: 4,
       linkUrl: 'shopy/womens',
     },
     {
-      title: 'mens',
+      title: 'Kids fashion',
+      imageUrl:
+        'https://i.ibb.co/hF6HPdv/Screen-Shot-2021-03-17-at-6-19-04-PM.png',
+      size: 'large',
+      id: 5,
+      linkUrl: 'shopy/kids',
+    },
+    {
+      title: 'Men Fashion',
       imageUrl: 'https://i.ibb.co/1RkF6XQ/myimg.jpg',
       size: 'large',
       id: 5,
