@@ -56,3 +56,12 @@ heroku create thekgmshopy --buildpack https://github.com/mars/create-react-app-b
 
 git push heroku master
 heroku git:remote -a YourAppName
+
+
+![Screen Shot 2021-06-02 at 11 27 23 AM](https://user-images.githubusercontent.com/63836841/120508558-d40b8400-c395-11eb-9ae5-12ce06784739.png)
+
+![Screen Shot 2021-06-02 at 11 27 37 AM](https://user-images.githubusercontent.com/63836841/120508590-da99fb80-c395-11eb-930c-c6eebdb38650.png)
+
+![Screen Shot 2021-06-02 at 11 27 43 AM](https://user-images.githubusercontent.com/63836841/120508622-df5eaf80-c395-11eb-99ce-c207f632805c.png)
+
+![Screen Shot 2021-06-02 at 11 28 18 AM](https://user-images.githubusercontent.com/63836841/120508635-e259a000-c395-11eb-8f41-d2fbba14357c.png)
