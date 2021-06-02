@@ -55,3 +55,4 @@ heroku deplo
 heroku create thekgmshopy --buildpack https://github.com/mars/create-react-app-buildpack.git
 
 git push heroku master
+heroku git:remote -a YourAppName
