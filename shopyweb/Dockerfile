@@ -16,6 +16,7 @@ WORKDIR /var/www
 ENV NODE_ENV=production
 
 # Copy contents of api folder to `WORKDIR` (root of build is now Express App)
+
 COPY ./src ./src
 COPY ./public ./public
 
@@ -33,4 +34,4 @@ RUN node_modules/.bin/react-scripts build
 # NOTE: Heroku does not support specifying ports
 
 # Start the Node.js app on load
-CMD [ "npm", ,"yarn", "start"  ]
+CMD [ "npm", "start" ]
