@@ -14,7 +14,7 @@ services:
       - CHOKIDAR_USEPOLLING=true      # enable fs event forwarding for file change detection (webpack)
     ports:                            # these services all share ports in Dev mode (see network_mode)
       - 3000:3000                     # defines port mapping for React dev server
-      - 3000:3000                     # defines port mapping for Express API server
+      - 3001:3001                     # defines port mapping for Express API server
       - 3306:3306                     # defines port mapping for MySql
     command: npm run react:start
   db:
