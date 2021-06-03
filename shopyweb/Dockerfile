@@ -1,37 +1,11 @@
-# This Dockerfile is for Heroku deployments only!
+FROM node:10 as build-deps
+WORKDIR /usr/src/app
+COPY package.json yarn.lock ./
+RUN yarn
+COPY . ./
+RUN yarn build
 
-# A node.js v10 box
-FROM node:10
-
-# Who(m) to blame if nothing works
-#MAINTAINER nobody@nowhere.com
-
-# Create a working directory 
-RUN mkdir -p /var/www
-
-# Switch to working directory
-WORKDIR /var/www
-
-# Set the environment for Heroku
-ENV NODE_ENV=production
-
-# Copy contents of api folder to `WORKDIR` (root of build is now Express App)
-
-COPY ./src ./src
-COPY ./public ./public
-
-# Copy the React build artifacts to a separate folder for static middleware
-# COPY ./build ./build
-
-# Install dependencies ... package.json from ./api is now in the root of container (so it's referenced here!)
-RUN yarn install
-
-#RUN npm install -g react react-scripts
-
-# Build the React App
-RUN node_modules/.bin/react-scripts build
-
-# NOTE: Heroku does not support specifying ports
-
-# Start the Node.js app on load
-CMD [ "npm", "start" ]
+FROM nginx:1.12-alpine
+COPY --from=build-deps /usr/src/app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
